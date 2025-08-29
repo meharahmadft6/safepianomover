@@ -73,7 +73,7 @@ export default function Contact() {
         {/* Hero Section */}
         <section className="bg-black text-white py-20">
           <div className="container mx-auto px-6 text-center">
-            <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-4">Contact Us</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Get in touch with California's most trusted piano moving
               professionals. We're here to help you 24/7, 365 days a year.
