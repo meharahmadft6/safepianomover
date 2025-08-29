@@ -96,7 +96,7 @@ const ClientTestimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-black mb-4 tracking-tight">
-            CLIENT TESTIMONIALS
+            CLIENT VOICES
           </h2>
         </div>
 
@@ -138,7 +138,7 @@ const ClientTestimonials = () => {
         }
 
         .animate-marquee-left {
-          animation: marquee-left 40s linear infinite;
+          animation: marquee-left 10s linear infinite;
           display: flex;
           width: max-content;
         }

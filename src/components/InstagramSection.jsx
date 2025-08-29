@@ -147,7 +147,7 @@ const InstagramSection = () => {
             {/* Subtle glow effect around the image */}
             <div className="absolute inset-0 bg-green-400 rounded-lg blur-xl opacity-20 -z-10"></div>
 
-            <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-green-500 rounded-full border-4 border-white shadow-lg z-20 flex items-center justify-center">
+            <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-purple-600 rounded-full border-4 border-white shadow-lg z-20 flex items-center justify-center">
               <svg
                 className="w-10 h-10 text-white"
                 fill="currentColor"

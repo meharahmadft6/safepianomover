@@ -43,15 +43,6 @@ const Working = () => {
                   sizes="(max-width: 768px) 25vw, 25vw"
                   priority={index < 4}
                 />
-
-                {/* Overlay with number */}
-                <div className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center shadow-lg">
-                    <span className="text-xl md:text-2xl font-bold text-gray-800">
-                      {num}
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
           ))}
@@ -83,15 +74,6 @@ const Working = () => {
                   sizes="(max-width: 768px) 25vw, 25vw"
                   priority={index < 4}
                 />
-
-                {/* Overlay with number */}
-                <div className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center shadow-lg">
-                    <span className="text-xl md:text-2xl font-bold text-gray-800">
-                      {num}
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
           ))}

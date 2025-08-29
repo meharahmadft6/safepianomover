@@ -11,7 +11,7 @@ const Marque = () => {
         {[...Array(20)].map((_, index) => (
           <span
             key={index}
-            className="text-black text-4xl md:text-7xl font-semibold mx-12"
+            className="text-black text-4xl md:text-7xl font-serif mx-12"
           >
             WHAT WE DO
           </span>
@@ -31,7 +31,7 @@ const Marque = () => {
           }
         }
         .animate-marquee {
-          animation: marquee 90s linear infinite;
+          animation: marquee 20s linear infinite;
         }
       `}</style>
     </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative bg-black">
@@ -31,10 +31,11 @@ export default function Hero() {
             <p className="text-lg mb-8 font-medium">
               Get an Instant Quote from us in just 3 Minutes!
             </p>
-
-            <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 uppercase">
-              CALL US NOW
-            </button>
+            <Link href="tel:7472459992" className="mb-4 inline-block">
+              <button className="bg-green-600 cursor-pointer hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 uppercase">
+                CALL US NOW
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -71,9 +72,11 @@ export default function Hero() {
                   Get an Instant Quote from us in just 3 Minutes!
                 </p>
 
-                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 uppercase">
-                  CALL US NOW
-                </button>
+                <Link href="tel:7472459992" className="mb-4 inline-block">
+                  <button className="bg-green-600 cursor-pointer hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 uppercase">
+                    CALL US NOW
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

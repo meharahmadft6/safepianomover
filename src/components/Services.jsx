@@ -8,7 +8,7 @@ const Services = () => {
     {
       id: "01",
       title: "LOCAL MOVING",
-      icon: <Truck className="w-8 h-8 md:w-12 md:h-12" />,
+      icon: <Truck className="w-8 h-8 md:w-12 md:h-12 text-green-500" />,
       features: [
         "Careful handling of your belongings",
         "Expertise in navigating within the New York City region",
@@ -18,7 +18,7 @@ const Services = () => {
     {
       id: "02",
       title: "LONG-DISTANCE",
-      icon: <Package className="w-8 h-8 md:w-12 md:h-12" />,
+      icon: <Package className="w-8 h-8 md:w-12 md:h-12 text-green-500" />,
       features: [
         "Seamless and secure",
         "Packing and unpacking services",
@@ -30,7 +30,7 @@ const Services = () => {
     {
       id: "03",
       title: "COMMERCIAL",
-      icon: <Building className="w-8 h-8 md:w-12 md:h-12" />,
+      icon: <Building className="w-8 h-8 md:w-12 md:h-12 text-green-500" />,
       features: [
         "Smooth and efficient relocation for businesses",
         "Expertise in handling office equipment and furniture",
@@ -90,10 +90,10 @@ const Services = () => {
                 scale: 1.02,
                 transition: { duration: 0.3 },
               }}
-              className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 cursor-pointer group"
+              className="bg-black text-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 cursor-pointer group"
             >
               <div className="flex items-center justify-between mb-6">
-                <span className="text-base md:text-lg font-bold text-black tracking-wider">
+                <span className="text-base md:text-lg font-bold text-white tracking-wider">
                   {service.id}
                 </span>
                 <motion.div
@@ -102,13 +102,13 @@ const Services = () => {
                     scale: 1.1,
                     transition: { duration: 0.3 },
                   }}
-                  className="text-gray-600 group-hover:text-green-600 transition-colors duration-300"
+                  className="text-white group-hover:text-green-600 transition-colors duration-300"
                 >
                   {service.icon}
                 </motion.div>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-black mb-4 md:mb-6 tracking-tight">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 tracking-tight">
                 {service.title}
               </h3>
 
@@ -123,9 +123,9 @@ const Services = () => {
                       delay: index * 0.1,
                       duration: 0.4,
                     }}
-                    className="text-gray-700 text-sm md:text-base leading-relaxed flex items-start"
+                    className="text-white text-sm md:text-base leading-relaxed flex items-start"
                   >
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3 mt-2 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0" />
                     {feature}
                   </motion.li>
                 ))}
