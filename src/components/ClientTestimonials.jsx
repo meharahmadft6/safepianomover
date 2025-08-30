@@ -3,6 +3,7 @@
 import React from "react";
 import { Star } from "lucide-react";
 import Link from "next/link";
+import Footer from "./Footer";
 const ClientTestimonials = () => {
   const testimonials = [
     {
@@ -91,71 +92,74 @@ const ClientTestimonials = () => {
   );
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-black mb-4 tracking-tight">
-            CLIENT VOICES
-          </h2>
-        </div>
-
-        {/* Marquee Container */}
-        <div className="relative">
-          {/* First Row - Left to Right */}
-          <div className="flex animate-marquee-left mb-8">
-            {[...testimonials, ...testimonials].map((testimonial, index) => (
-              <TestimonialCard
-                key={`left-${testimonial.id}-${index}`}
-                testimonial={testimonial}
-              />
-            ))}
+    <>
+      <section className="py-20 bg-white overflow-hidden">
+        <div className="container mx-auto px-4">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-4 tracking-tight">
+              CLIENT VOICES
+            </h2>
           </div>
+
+          {/* Marquee Container */}
+          <div className="relative">
+            {/* First Row - Left to Right */}
+            <div className="flex animate-marquee-left mb-8">
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
+                <TestimonialCard
+                  key={`left-${testimonial.id}-${index}`}
+                  testimonial={testimonial}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center mt-16">
+            <p className="text-xl text-gray-600 mb-8">
+              Join hundreds of satisfied customers who trust us with their
+              precious pianos
+            </p>
+            <Link href="/contact">
+              <button className="bg-gradient-to-r cursor-pointer from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                Get Your Free Quote
+              </button>
+            </Link>
+          </div>
+          <Footer />
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <p className="text-xl text-gray-600 mb-8">
-            Join hundreds of satisfied customers who trust us with their
-            precious pianos
-          </p>
-          <Link href="/contact">
-            <button className="bg-gradient-to-r cursor-pointer from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Get Your Free Quote
-            </button>
-          </Link>
-        </div>
-      </div>
-
-      <style jsx>{`
-        @keyframes marquee-left {
-          0% {
-            transform: translateX(0);
+        <style jsx>{`
+          @keyframes marquee-left {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
           }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
 
-        .animate-marquee-left {
-          animation: marquee-left 10s linear infinite;
-          display: flex;
-          width: max-content;
-        }
-
-        /* Show two cards at a time on desktop */
-        @media (min-width: 1024px) {
           .animate-marquee-left {
-            width: 200%;
+            animation: marquee-left 10s linear infinite;
+            display: flex;
+            width: max-content;
           }
-        }
 
-        /* Pause animation on hover */
-        .animate-marquee-left:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
-    </section>
+          /* Show two cards at a time on desktop */
+          @media (min-width: 1024px) {
+            .animate-marquee-left {
+              width: 200%;
+            }
+          }
+
+          /* Pause animation on hover */
+          .animate-marquee-left:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Working = () => {
   // Generate array of image numbers
-  const imageNumbers = Array.from({ length: 9 }, (_, i) => i + 1);
+  const imageNumbers = Array.from({ length: 18 }, (_, i) => i + 1);
   const reverseImageNumbers = [...imageNumbers].reverse();
 
   // Create multiple copies for seamless loop

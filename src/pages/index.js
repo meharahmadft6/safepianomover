@@ -9,6 +9,7 @@ import Map from "@/components/Map";
 import InstagramSection from "@/components/InstagramSection";
 import OtherServices from "@/components/OtherServices";
 import Zipcode from "@/components/ZipCode";
+import Video from "@/components/Video";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <Services />
         <Working />
         <ClientTestimonials />
+        <Video />
         <div className="ms-5 me-5 mb-5">
           <Map />
         </div>
