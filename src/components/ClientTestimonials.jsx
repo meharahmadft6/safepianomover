@@ -3,7 +3,7 @@
 import React from "react";
 import { Star } from "lucide-react";
 import Link from "next/link";
-import Footer from "./Footer";
+
 const ClientTestimonials = () => {
   const testimonials = [
     {
@@ -127,7 +127,6 @@ const ClientTestimonials = () => {
               </button>
             </Link>
           </div>
-          <Footer />
         </div>
 
         <style jsx>{`

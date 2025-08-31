@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-
 import Working from "@/components/Working";
 import Footer from "@/components/Footer";
 
@@ -37,24 +36,26 @@ const Portfolio = () => {
       <Working />
       <div className="w-full bg-white py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-8xl mx-auto">
-          {/* Main Content Section */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mb-16 md:mb-20">
-            {/* Owner Image */}
-            <div className="w-full lg:w-2/5 flex justify-center">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="/owner.png"
-                  alt="Alex - Founder of Safe Piano Movers"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
+          {/* Large Centered Owner Image */}
+          <div className="flex justify-center mb-12 md:mb-16">
+            <div className="relative w-full max-w-2xl h-100 md:h-[700px] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="/owner.png"
+                alt="Alex - Founder of Safe Piano Movers"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
+          </div>
 
-            {/* Text Content */}
-            <div className="w-full lg:w-3/5">
+          {/* Video and Story Section */}
+          <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mb-16 md:mb-20">
+            {/* Video Section on Left */}
+
+            {/* Text Content on Right */}
+            <div className="w-full lg:w-1/2 ms-5 md:ms-20">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                ALEX
+                OUR STORY
               </h2>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
                 After years of working with various moving companies and gaining
@@ -71,14 +72,28 @@ const Portfolio = () => {
                 </p>
               </div>
             </div>
+            <div className="w-full lg:w-1/2">
+              <div className=" p-6  ">
+                <div className="w-full mx-auto">
+                  <video
+                    ref={videoRef}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-auto x"
+                  >
+                    <source src="/truck.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* Divider */}
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-12 md:mb-16"></div>
 
           {/* ALL MEN ARE SAME Section */}
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">
               ALL MEN ARE SAME ! ?
             </h2>
 
@@ -104,29 +119,6 @@ const Portfolio = () => {
                 transported with the highest standard of safety and precision.
               </p>
             </div>
-          </div>
-
-          {/* Video Section */}
-          <div className="bg-gray-100 p-6 md:p-8 rounded-2xl shadow-inner">
-            <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">
-              Our Equipment in Action
-            </h3>
-            <div className="w-full max-w-4xl mx-auto">
-              <video
-                ref={videoRef}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-auto rounded-xl shadow-lg"
-              >
-                <source src="/truck.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <p className="text-center text-gray-600 mt-4">
-              Our specialized truck and equipment ready for your move
-            </p>
           </div>
 
           {/* Features Grid */}
