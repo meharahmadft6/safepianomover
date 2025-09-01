@@ -58,7 +58,7 @@ export default function PianoMoving() {
       title: "Upright Piano",
       description:
         "Upright pianos are generally 48” and over. These pianos are the choice of players looking for grand piano type sound without taking up as much space.",
-      image: "/p4.png",
+      image: "/up.png",
       features: ["48+ inches tall", "Grand piano sound", "Space-efficient"],
     },
     {

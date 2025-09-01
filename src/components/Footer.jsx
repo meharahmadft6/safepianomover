@@ -30,36 +30,58 @@ const Footer = () => {
                   expertise it deserves.
                 </p>
               </div>
-
               <div className="space-y-4">
-                <div className="flex items-center group hover:text-green-600 transition-colors duration-300">
+                {/* Phone */}
+                <a
+                  href="tel:+17472459992"
+                  className="flex items-center group hover:text-green-600 transition-colors duration-300"
+                >
                   <div className="mr-4 p-2 bg-green-100 rounded-lg group-hover:bg-green-200 transition-colors duration-300">
                     <Phone className="w-5 h-5 text-green-600" />
                   </div>
                   <span className="text-lg font-medium">(747) 245-9992</span>
-                </div>
-                <div className="flex items-center group hover:text-blue-600 transition-colors duration-300">
+                </a>
+
+                {/* Email */}
+                <a
+                  href="mailto:safepianomover@gmail.com"
+                  className="flex items-center group hover:text-blue-600 transition-colors duration-300"
+                >
                   <div className="mr-4 p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors duration-300">
                     <Mail className="w-5 h-5 text-blue-600" />
                   </div>
                   <span className="text-lg font-medium">
                     safepianomover@gmail.com
                   </span>
-                </div>
-                <div className="flex items-center group hover:text-purple-600 transition-colors duration-300">
+                </a>
+
+                {/* Website */}
+                <a
+                  href="https://www.safepianomover.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group hover:text-purple-600 transition-colors duration-300"
+                >
                   <div className="mr-4 p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors duration-300">
                     <Globe className="w-5 h-5 text-purple-600" />
                   </div>
                   <span className="text-lg font-medium">
                     www.safepianomover.com
                   </span>
-                </div>
-                <div className="flex items-center group hover:text-red-600 transition-colors duration-300">
+                </a>
+
+                {/* Address (Google Maps) */}
+                <a
+                  href="https://www.google.com/maps/place/Hollywood,+CA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group hover:text-red-600 transition-colors duration-300"
+                >
                   <div className="mr-4 p-2 bg-red-100 rounded-lg group-hover:bg-red-200 transition-colors duration-300">
                     <MapPin className="w-5 h-5 text-red-600" />
                   </div>
                   <span className="text-lg font-medium">Hollywood, CA</span>
-                </div>
+                </a>
               </div>
             </div>
 
@@ -126,9 +148,16 @@ const Footer = () => {
 
               <div className="flex space-x-4">
                 {[
-                  { icon: Facebook, href: "#", color: "hover:text-blue-600" },
-                  { icon: Instagram, href: "#", color: "hover:text-pink-600" },
-                  { icon: Twitter, href: "#", color: "hover:text-blue-400" },
+                  {
+                    icon: Facebook,
+                    href: "https://www.facebook.com/profile.php?id=61579725017882 ",
+                    color: "hover:text-blue-600",
+                  },
+                  {
+                    icon: Instagram,
+                    href: "https://www.instagram.com/safepianomover_?igsh=bzZqanc0dTdrdmcy",
+                    color: "hover:text-pink-600",
+                  },
                 ].map((social, index) => {
                   const Icon = social.icon;
                   return (

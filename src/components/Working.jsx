@@ -23,7 +23,7 @@ const Working = () => {
         <motion.div
           animate={{ x: [0, -100 / 3 + "%"] }}
           transition={{
-            duration: 25,
+            duration: 15,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -54,7 +54,7 @@ const Working = () => {
         <motion.div
           animate={{ x: [-100 / 3 + "%", 0] }}
           transition={{
-            duration: 20,
+            duration: 10,
             repeat: Infinity,
             ease: "linear",
           }}

@@ -37,7 +37,7 @@ const Portfolio = () => {
       <div className="w-full bg-white py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-8xl mx-auto">
           {/* Large Centered Owner Image */}
-          <div className="flex justify-center mb-12 md:mb-16">
+          <div className="flex justify-center mb-12 md:mb-10">
             <div className="relative w-full max-w-2xl h-100 md:h-[700px] rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/owner.png"
@@ -47,14 +47,16 @@ const Portfolio = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
           </div>
-
+          <h2 className="text-4xl md:text-6xl text-center font-bold text-gray-800 mb-6">
+            ALEX
+          </h2>
           {/* Video and Story Section */}
           <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mb-16 md:mb-20">
             {/* Video Section on Left */}
 
             {/* Text Content on Right */}
             <div className="w-full lg:w-1/2 ms-5 md:ms-20">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-3">
                 OUR STORY
               </h2>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">

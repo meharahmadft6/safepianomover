@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: "export",
+  images: {
+    unoptimized: true, // Required for static export
+    // domains won't be used - remove them
+  },
 };
 
 export default nextConfig;
